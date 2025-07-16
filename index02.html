@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputname" value="Nguyễn Văn A" type="text" placeholder="nhapten">
+    <button id="btnclick">click</button>
+    <span id="display"></span>
+    <script>
+        var inputname = document.getElementById("inputname");
+        var btnclick = document.getElementById("btnclick");
+        var display = document.getElementById("display");
+
+        function clickbyme() {
+            display.innerText = "hello" + " " + inputname.value;
+
+        }
+        btnclick.onclick = clickbyme;
+    </script>
+
+</body>
+
+</html>
