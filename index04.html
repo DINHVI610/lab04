@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="number1" type="number" placeholder="nhập số thứ nhất">
+    <input id="number2" type="number" placeholder="nhập số thứ hai">
+    <button id="btnplus">Cộng 2 số</button>
+    <span id="display"></span>
+
+    <script>
+        var number1 = document.getElementById("number1");
+        var number2 = document.getElementById("number2");
+        var btnplus = document.getElementById("btnplus");
+        var display = document.getElementById("display");
+
+
+        function mathbyme() {
+            var val1 = Number(number1.value);
+            var val2 = Number(number2.value);
+            display.innerText = val1 + val2;
+        }
+        btnplus.onclick = mathbyme;
+    </script>
+
+</body>
+
+</html>
