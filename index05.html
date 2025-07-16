@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="number1" type="text" placeholder="nhập số thứ nhất">
+    <input id="number2" type="text" placeholder="nhập số thứ hai">
+    <button id="btnplus">sum</button>
+    <span id="display"></span>
+
+    <script>
+        function mathnc() {
+
+            display.innerText = val1 + val2;
+
+            var value1 = number1.value;
+            var value2 = number2.value;
+            var pattern = /^[a-zA-Z]$/
+
+            if (value1 == "" || value2 == "") {
+                display.innerText = "chưa nhập số"
+            } else if (pattern.test(value1) || pattern.test(value2))
+                display.innerText = "bạn vừa nhập text"
+            else {
+                var val1 = Number(value1);
+                var val2 = Number(value2);
+                display.innerText = val1 + val2;
+            }
+
+        }
+
+
+        btnplus.onclick = mathnc;
+    </script>
+</body>
+
+</html>
