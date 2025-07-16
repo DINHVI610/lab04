@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputname" value="NTA" type="text" placeholder="nhapten">
+    <button id="btncheck">check</button>
+
+    <script>
+        var inputname = document.getElementById("inputname");
+        var btncheck = document.getElementById("btncheck");
+
+
+        function checkbyme() {
+            console.log("hello" + " " + inputname.value);
+        }
+        btncheck.onclick = checkbyme;
+    </script>
+
+</body>
+
+</html>
